@@ -1,0 +1,67 @@
+<div class="container pt-1">
+  <div class="row rowCurrency">
+    <div class="col-sm-4 pt-2 colCurrency">
+      <h4>USD</h4>
+      <div class="cardCurrency">
+        {{usd}}
+      </div>
+    </div>
+    <div class="col-sm-4 pt-2 colCurrency">
+      <h4>EUR</h4>
+      <div class="cardCurrency">
+        {{eur}}
+      </div>
+    </div>
+    <div class="col-sm-4 pt-2 colCurrency">
+      <h4>GBP</h4>
+      <div class="cardCurrency">
+        {{gbp}}
+      </div>
+    </div>
+  </div>
+  <div class="row tryCurrency pt-2">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-4 pt-2 colTry">
+      <p-inputNumber [(ngModel)]="tlUsd" (ngModelChange)="getUsdTl()" [showButtons]="true" inputId="stacked" mode="currency" currency="TRY"></p-inputNumber>
+    </div>
+    <div class="col-sm-4 pt-2 colTry">
+      <p-inputNumber [(ngModel)]="usdTl" (ngModelChange)="getTlUsd()" [showButtons]="true" inputId="stacked" mode="currency" currency="USD"></p-inputNumber>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
+  <div class="row tryCurrency pt-2">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-4 pt-2 colTry">
+      <p-inputNumber [(ngModel)]="tlEur" (ngModelChange)="getEurTl()" [showButtons]="true" inputId="stacked" mode="currency" currency="TRY"></p-inputNumber>
+    </div>
+
+    <div class="col-sm-4 pt-2 colTry">
+      <p-inputNumber [(ngModel)]="eurTl" (ngModelChange)="getTlEur()" [showButtons]="true" inputId="stacked" mode="currency" currency="EUR"></p-inputNumber>
+    </div>
+
+    <div class="col-sm-2">
+
+    </div>
+
+  </div>
+  <div class="row tryCurrency pt-2">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-4 pt-2 colTry">
+      <p-inputNumber [(ngModel)]="tlGbp" (ngModelChange)="getGbpTl()" [showButtons]="true" inputId="stacked" mode="currency" currency="TRY"></p-inputNumber>
+    </div>
+    <div class="col-sm-4 pt-2 colTry">
+      <p-inputNumber [(ngModel)]="gbpTl" (ngModelChange)="getTlGbp()" [showButtons]="true" inputId="stacked" mode="currency" currency="GBP"></p-inputNumber>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
+</div>
